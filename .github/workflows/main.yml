@@ -46,7 +46,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo pip install -r requirements.txt --break-system-pakages
+          sudo pip install -r requirements.txt --break-system-packages
 
       - name: Run L7 Ping Test
         if: github.event.inputs.layer == 'L7'
